@@ -37,11 +37,6 @@ const Example: FC = () => {
     })
   }, [fromRef, toRef])
 
-  useEffect(() => {
-    console.log('image rerendered')
-    pxRef.current?.pixelate()
-  }, [pxRef])
-
   return (
     <div className="Example">
       <img src={pepe} alt="" ref={fromRef} onLoad={() => pxRef.current?.pixelate()} />
