@@ -1,0 +1,18 @@
+.App canvas {
+  width: 300px;
+  height: 300px;
+}
+
+.App .canvasBg {
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffffff10;
+  padding: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.App input {
+  color: #fff;
+  margin-top: 24px;
+}
