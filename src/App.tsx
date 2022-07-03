@@ -30,7 +30,7 @@ const Example: FC = () => {
   }, [])
 
   useEffect(() => {
-    console.log('rerendering img')
+    console.log('new obj created')
     pxRef.current = new Pixelit({
       from: fromRef.current!,
       to: toRef.current!
@@ -38,6 +38,7 @@ const Example: FC = () => {
   }, [fromRef, toRef])
 
   useEffect(() => {
+    console.log('image rerendered')
     pxRef.current?.pixelate()
   }, [pxRef])
 
